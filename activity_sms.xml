@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inventory_alerts"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#1565C0"
+        android:layout_marginTop="40dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="12dp"
+        android:text="@string/receive_sms_alerts_when_an_item_s_quantity_reaches_zero_this_helps_you_know_when_inventory_needs_to_be_restocked"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+        android:layout_marginTop="30dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sms_permission_status"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/textPermissionStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/permission_not_granted"
+            android:textSize="16sp"
+            android:layout_marginTop="12dp"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+
+    <Button
+        android:id="@+id/buttonGrantPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/grant_sms_permission"
+        android:layout_marginTop="30dp"
+        tools:ignore="VisualLintButtonSize" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/if_permission_is_denied_inventory_tracking_will_continue_normally_but_sms_notifications_will_be_disabled"
+        android:textSize="14sp"
+        android:textAlignment="center"
+        android:textColor="#666666"
+        android:layout_marginTop="24dp"/>
+
+    <Button
+        android:id="@+id/buttonBackInventory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/return_to_inventory"
+        android:layout_marginTop="20dp"
+        tools:ignore="VisualLintButtonSize" />
+
+
+</LinearLayout>

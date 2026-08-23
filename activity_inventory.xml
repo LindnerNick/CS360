@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inventorymanager_"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#1565C0"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        tools:ignore="VisualLintSystemUi" />
+
+    <EditText
+        android:id="@+id/editSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:autofillHints=""
+        android:hint="@string/search_inventory"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:id="@+id/tableInventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0">
+
+            <!-- Inventory header -->
+            <TableRow
+                android:background="#1565C0"
+                android:padding="8dp">
+
+                <TextView
+                    android:text="@string/item_"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:text="@string/quantity_"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="77dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/_edit__"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="77dp"
+                    android:layout_height="36dp"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="Delete"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonAddItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_item_"
+        android:layout_marginTop="16dp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/buttonNotifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sms_notifications_"
+        android:layout_marginTop="8dp"
+        tools:ignore="VisualLintButtonSize" />
+
+</LinearLayout>

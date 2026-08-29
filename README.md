@@ -1,4 +1,31 @@
-# CS360
+# Inventory Tracking Android Application
+
+An Android inventory management application developed using Java and Android Studio. 
+The application allows users to create accounts, manage inventory items, update quantities, and receive an SMS alert when an item's quantity reaches zero.
+
+Technologies:
+Java
+Android Studio
+SQLite
+Android SDK
+XML
+
+Features:
+User login and account creation
+Inventory item management
+Add, edit, and remove inventory items
+Inventory quantity tracking
+SMS notification when inventory reaches zero
+Responsive UI testing across different screen sizes
+Project Highlights
+Designed and implemented the SQLite database used by the application.
+Developed multiple Android activities for login, inventory management, item creation/editing, and SMS functionality.
+Tested the application across multiple screen sizes.
+Focused on keeping the interface simple and user-friendly.
+
+
+
+# CS360 Reflection #
 
 **/Briefly summarize the requirements and goals of the app you developed. What user needs was this app designed to address?/**
 

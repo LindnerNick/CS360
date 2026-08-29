@@ -131,13 +131,6 @@ public class MainActivity extends AppCompatActivity {
             cursor.close();//Always turn off the lights!
         });
 
-        Intent intent = new Intent(
-                MainActivity.this,
-                InventoryActivity.class
-        );
-
-        startActivity(intent);
-
     }}//End
 
 
